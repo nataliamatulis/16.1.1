@@ -3,12 +3,12 @@ body{
 }
 
 header h1{
-  font-size: 2rem;
+  font-size: 50px;
   color: #ffffff;
 }
 
 header p{
-  font-size: 1rem;
+  font-size: 25px;
   color: aliceblue;
 }
 
@@ -22,16 +22,16 @@ header p{
   grid-template-columns: repeat(6, 1fr); /* 6 columnas */
   gap: 5px; /* Separación de 0.5 cm */
   padding: 0; /* Elimina el padding para asegurar que no haya espacio interno */
-  margin-left: 1.5rem;
+  margin-left: 0.5rem;
 }
   
 .dog-card {
   text-align: center;
   border-radius: 8px;
-  padding: 20px; /* Aumenta el padding */
+  padding: 10px; /* Aumenta el padding */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
-  font-size: 2rem; /* Ajusta el tamaño de la fuente si necesario */
+  font-size: 25px; /* Ajusta el tamaño de la fuente si necesario */
 }
 
 .dog-card img {
@@ -47,8 +47,8 @@ header p{
 
 #dog-gallery > div > div > div > h5{
   text-align: center;
-  margin-top: 1rem;
-  font-size: 2rem;
+  margin-top: 0.5rem;
+  font-size: 50px;
   color: #ffffff;
   background: rgba(220, 167, 8, 0.627);
   width: 100%;
@@ -57,7 +57,7 @@ header p{
 
 #dog-gallery > div > div > div > p{
   text-align: center;
-  font-size: 1rem;
+  font-size: 25px;
   color: #ffffff;
   background: rgba(220, 167, 8, 0.392);
   width: 100%;
@@ -67,7 +67,7 @@ header p{
 .dog-card .info {
   text-align: center; /* Centra el texto horizontalmente */
   margin-top: 10px; /* Espaciado entre la imagen y el texto */
-  font-size: 1.2rem; /* Tamaño de fuente adecuado */
+  font-size: 25px; /* Tamaño de fuente adecuado */
   display: flex;
   flex-direction: column; /* Asegura que los elementos estén en columna */
   align-items: center; /* Alinea el texto en el centro */
@@ -78,7 +78,7 @@ header p{
 }
 
 #search-input {
-  font-size: 1rem;
+  font-size: 25px;
   padding: 30px;
   border: 2px solid #ccc;
   border-radius: 8px;
@@ -94,7 +94,7 @@ header p{
 body > footer p{
   background-color: #ffffff;
   color: #e1a413;
-  font-size: 1.5rem;
+  font-size: 50px;
 }
 
 body > footer{
