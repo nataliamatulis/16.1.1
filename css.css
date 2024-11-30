@@ -5,6 +5,7 @@ body{
 header h1{
   font-size: 50px;
   color: #ffffff;
+  object-fit: fill;
 }
 
 header p{
@@ -19,7 +20,7 @@ header p{
   
 #dog-gallery {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6 columnas */
+  grid-template-columns: repeat(6, 1fr); /* 6 columnas en pantallas grandes */
   gap: 5px; /* Separación de 0.5 cm */
   padding: 0; /* Elimina el padding para asegurar que no haya espacio interno */
   margin-left: 0.5rem;
@@ -79,7 +80,7 @@ header p{
 
 #search-input {
   font-size: 25px;
-  padding: 30px;
+  padding: 20px;
   border: 2px solid #ccc;
   border-radius: 8px;
   color:  rgb(0, 0, 0);;
@@ -99,4 +100,62 @@ body > footer p{
 
 body > footer{
   background-color: white;
+  object-fit: fill;
+}
+
+/* Estilos generales: Escritorio por defecto */
+
+
+/* Tablet: Pantallas medianas */
+@media (max-width: 1024px) {
+  #dog-gallery {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en tablet */
+  }
+  
+  .dog-card {
+    font-size: 20px; /* Ajusta el tamaño de la fuente */
+    padding: 8px; /* Ajusta el espaciado */
+  }
+
+  header h1 {
+    font-size: 40px; /* Reduce el tamaño del título */
+  }
+
+  header p {
+    font-size: 20px;
+  }
+
+  body > footer p {
+    font-size: 40px;
+  }
+}
+
+/* Móvil: Pantallas pequeñas */
+@media (max-width: 600px) {
+  #dog-gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en móvil */
+    gap: 10px;
+  }
+  
+  .dog-card {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  header h1 {
+    font-size: 30px; /* Título más pequeño */
+  }
+
+  header p {
+    font-size: 18px; /* Ajusta el tamaño del subtítulo */
+  }
+
+  #search-input {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  body > footer p {
+    font-size: 30px;
+  }
 }
