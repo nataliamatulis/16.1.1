@@ -1,59 +1,102 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+body{
+  background-color: rgba(203, 180, 27, 0.126);
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+header h1{
+  font-size: 7rem;
+  color: #ffffff;
 }
 
+header p{
+  font-size: 5rem;
+  color: aliceblue;
+}
+
+#dog-gallery > div{
+  width: 100%;
+  height: auto;
+}
+  
+#dog-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 columnas */
+  gap: 5px; /* Separación de 0.5 cm */
+  padding: 0; /* Elimina el padding para asegurar que no haya espacio interno */
+  margin-left: 5rem;
+}
+  
+.dog-card {
+  text-align: center;
+  border-radius: 8px;
+  padding: 20px; /* Aumenta el padding */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  font-size: 2rem; /* Ajusta el tamaño de la fuente si necesario */
+}
 
 .dog-card img {
-  width: 100%;
-  height: 200px;
+  width: 500px; /* Cambia el tamaño de las imágenes */
+  height: 500px; /* Ajusta el tamaño de la imagen proporcionalmente */
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 20%;
+}
+
+.dog-card:hover {
+  transform: scale(1.05);
+}
+
+#dog-gallery > div > div > div > h5{
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 5rem;
+  color: #ffffff;
+  background: rgba(220, 167, 8, 0.627);
+  width: 100%;
+  height: auto;
+}
+
+#dog-gallery > div > div > div > p{
+  text-align: center;
+  font-size: 4rem;
+  color: #ffffff;
+  background: rgba(220, 167, 8, 0.392);
+  width: 100%;
+  height: auto;
 }
 
 .dog-card .info {
-  text-align: center;
-  margin-top: 10px;
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-top: 10px; /* Espaciado entre la imagen y el texto */
+  font-size: 1.2rem; /* Tamaño de fuente adecuado */
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos estén en columna */
+  align-items: center; /* Alinea el texto en el centro */
+  justify-content: center; /* Alinea verticalmente si es necesario */
+  background-color: #f9e6a3; /* Color de fondo */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
 }
 
-  
-  main {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  #dog-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  
-  .dog-card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.2s;
-  }
-  
-  .dog-card:hover {
-    transform: scale(1.05);
-  }
-  
-  
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-  }
-  
+#search-input {
+  font-size: 2rem;
+  padding: 30px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  color:  rgb(0, 0, 0);;
+}
+#search-input:focus {
+  outline: none;
+  border-color: rgba(200, 144, 13, 0.5);
+  box-shadow: 0 0 5px rgba(200, 144, 13, 0.5);
+  color: #000000;
+}
+
+body > footer p{
+  background-color: #ffffff;
+  color: #e1a413;
+  font-size: 3rem;
+}
+
+body > footer{
+  background-color: white;
+}

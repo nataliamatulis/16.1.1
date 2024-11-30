@@ -6,21 +6,37 @@
   <title>Galería de perros</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css.css">
 </head>
-<body>
-  <header class="bg-warning text-center py-4">
-    <h1>Dog Breeds Gallery</h1>
-    <p>Discover different breeds of dogs from The Dog API!</p>
-  </header>
-  <main class="container my-4">
-    <div id="dog-gallery" class="row g-3"></div>
-  </main>
-  <footer class="text-center py-3 bg-dark text-white">
-    <p>Powered by <a href="https://thedogapi.com/" target="_blank" class="text-warning">The Dog API</a></p>
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+<body>
+
+  <header class="bg-warning text-center py-4">
+    <h1>Galería de razas</h1>
+    <p>Descubre todas las razas que hay en el mundo!</p>
+    <input 
+      type="text" 
+      id="search-input" 
+      class="form-control w-50 mx-auto mt-3" 
+      placeholder="Busca una raza por nombre..."
+    >
+  </header>
+
+  <div class="container-fluid my-4 px-0">
+    <div id="dog-gallery" class="row g-4">
+    </div>
+  </div>
+
+
 </body>
+
+
+<footer class="text-center py-3">
+  <p>Powered by <a href="https://thedogapi.com/" target="_blank" class="text-warning">The Dog API</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+
 </html>
